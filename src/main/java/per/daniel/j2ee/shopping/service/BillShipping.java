@@ -28,7 +28,7 @@ public class BillShipping {
     @Resource(mappedName = "java:/ConnectionFactory")
     private ConnectionFactory connectionFactory;
 
-    @Resource(mappedName = "java:/queue/Shipping")
+    @Resource(mappedName = "java:/queue/DLQ")
     private Queue queue;
 
     public void shippingBill(Billing billing) throws Exception {
