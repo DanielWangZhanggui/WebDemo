@@ -15,7 +15,7 @@ import per.daniel.j2ee.shopping.model.Billing;
 
 @MessageDriven(name = "HelloWorldQueueMDB", activationConfig = {
         @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
-        @ActivationConfigProperty(propertyName = "destination", propertyValue = "queue/DLQ"),
+        @ActivationConfigProperty(propertyName = "destination", propertyValue = "jms/queue/DLQ"),
         @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge") })
 public class ShippingQueueMDB implements MessageListener{
 
